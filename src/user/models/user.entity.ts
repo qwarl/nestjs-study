@@ -1,29 +1,5 @@
 // import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import {
-  Column,
-  Entity,
-  JoinColumn,
-  ManyToOne,
-  PrimaryGeneratedColumn,
-} from 'typeorm';
-
-// @Entity('users')
-// export class User {
-//   @PrimaryGeneratedColumn()
-//   id: number;
-
-//   @Column()
-//   first_name: string;
-
-//   @Column()
-//   last_name: string;
-
-//   @Column({ unique: true })
-//   email: string;
-
-//   @Column()
-//   password: string;
-// }
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('users')
 export class User {
@@ -40,10 +16,5 @@ export class User {
   email: string;
 
   @Column()
-  //   @Exclude()
   password: string;
-
-  //   @ManyToOne(() => Role)
-  //   @JoinColumn({ name: 'role_id' })
-  //   role: Role;
 }
