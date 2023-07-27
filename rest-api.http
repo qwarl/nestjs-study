@@ -1,0 +1,8 @@
+GET https://jsonplaceholder.typicode.com/posts/1
+
+Accept: application/json
+
+
+GET https://reqres.in/api/users/2
+
+Content-Type: application/json
